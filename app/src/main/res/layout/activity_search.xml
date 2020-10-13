@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarLayout"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:id="@+id/go_back"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+                <androidx.appcompat.widget.SearchView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:id="@+id/search_text"
+                    android:queryHint="search movie,person or tv show"
+                    android:textColorHighlight="#000000"
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:fillViewport="true">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trending_text"/>
+    </ScrollView>
+
+</RelativeLayout>

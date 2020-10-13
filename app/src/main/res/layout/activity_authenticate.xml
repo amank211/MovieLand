@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticate">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/url_layout"
+            android:background="#03A9F4"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:id="@+id/close"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/url"/>
+        </LinearLayout>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"
+            android:layout_below="@+id/url_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

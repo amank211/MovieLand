@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/refresh_page"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/top_layout"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                style="@style/sections_layout_appearance">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/genres_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/genre"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                style="@style/sections_layout_appearance">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movies"
+                    style="@style/sections_text_appearance"
+                    android:id="@+id/trending_text" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/movies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/trending_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                style="@style/sections_layout_appearance"
+                android:layout_height="300dp" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tv Shows"
+                    style="@style/sections_text_appearance"
+                    android:id="@+id/top_rated_text"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tv_shows"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/top_rated_text"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

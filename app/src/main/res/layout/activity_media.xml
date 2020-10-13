@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MediaActivity">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fd"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarLayout"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsing"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/banner"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/media_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextAppearance="@style/Toolbar_media_title_appearance"
+            app:subtitleTextAppearance="@style/Toolbar_media_subtitle_appearance"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitle="hello"
+            app:layout_collapseMode="pin" >
+        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/media_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            app:tabGravity="center"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="#f7fbfc"
+            app:tabIndicatorHeight="1.5sp"
+            app:tabTextColor="#d6e6f2"
+            app:tabSelectedTextColor="#f7fbfc"
+            android:gravity="bottom"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/media_viewpager"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="wrap_content"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1272631982878279/9391159036">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10sp"
+        android:textAlignment="center"
+        android:paddingTop="20sp"
+        android:paddingBottom="15sp"
+        android:background="#f0efef"
+        android:paddingStart="10sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="15sp"
+            android:id="@+id/overview"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Facts"
+                style="@style/sections_text_appearance"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15sp"
+            android:paddingEnd="10sp"
+            android:paddingTop="10sp"
+            android:paddingStart="15sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Original Title -"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:paddingStart="3sp"
+                android:id="@+id/original_title"
+                android:layout_marginBottom="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+
+                android:layout_marginBottom="7sp"
+                android:text="Original Language -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:paddingStart="3sp"
+                android:id="@+id/original_language"
+                android:layout_marginBottom="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"
+                android:text="Directed By -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:id="@+id/director"
+                android:paddingStart="3sp"
+                android:layout_marginBottom="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"
+                android:text="Budget -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:paddingStart="3sp"
+                android:layout_marginBottom="7sp"
+                android:id="@+id/budget"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"
+                android:text="Revenue -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:id="@+id/revenue"
+                android:paddingStart="3sp"
+                android:layout_marginBottom="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Homepage -"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:paddingStart="3sp"
+                android:id="@+id/homepage"
+                android:layout_marginBottom="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Production Companies -"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:id="@+id/productions"
+                android:paddingStart="3sp"
+                android:layout_marginBottom="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginBottom="7sp"
+                android:text="Releases -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:id="@+id/releases"
+                android:paddingStart="3sp"
+                android:layout_marginBottom="12sp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

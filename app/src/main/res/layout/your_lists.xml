@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/refresh_page"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_layout"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                style="@style/sections_layout_appearance"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lists"
+                    style="@style/sections_text_appearance"
+                    android:id="@+id/top_rated_text"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lists_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_rated_text"/>
+            </RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/create_list"
+                android:text="create list"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

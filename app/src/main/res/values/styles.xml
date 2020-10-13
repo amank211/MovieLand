@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Toolbar_title_appearance">
+        <item name="android:fontFamily">@font/spicyrice_regular</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Toolbar_media_title_appearance">
+        <item name="android:fontFamily">@font/anton_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Toolbar_media_subtitle_appearance">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="sections_text_appearance">
+        <item name="android:fontFamily">@font/anton_regular</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:textColor">#52616b</item>
+        <item name="android:letterSpacing">.05</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="sections_layout_appearance">
+        <item name="android:background">@color/relative_sections</item>
+        <item name="android:layout_marginBottom">1sp</item>
+        <item name="android:elevation">50sp</item>
+    </style>
+
+    <style name="media_title_appearance">
+        <item name = "android:layout_marginTop">4dp</item>
+        <item name = "android:layout_marginLeft">4dp</item>
+        <item name = "android:layout_marginRight">10sp</item>
+        <item name = "android:ellipsize">end</item>
+        <item name = "android:singleLine">true</item>
+        <item name = "android:textColor">#52616b</item>
+        <item name = "android:textSize">12sp</item>
+        <item name = "android:gravity">center</item>
+    </style>
+
+
+
+</resources>
