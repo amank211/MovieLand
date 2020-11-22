@@ -6,8 +6,7 @@ This project uses TMDB REST API to show movie data.
 <img src="Screenshots/img_2.jpg" width="200">
 
 # Search Activity
-<img src="Screenshots/Screenshot_2020-10-28-14-15-29-88_67ef6253042c53f51dcc407f80548df2.jpg
-" width="200">
+<img src="Screenshots/img_5.jpg" width="200">
 
 # Actors Screen
 <img src="Screenshots/Screenshot_2020-10-28-14-15-09-36_67ef6253042c53f51dcc407f80548df2.jpg" width="200">
