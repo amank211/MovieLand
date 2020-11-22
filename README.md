@@ -3,8 +3,7 @@ This android project is made in android studio which lets you see featured movie
 This project uses TMDB REST API to show movie data.
 
 # Home Screen
-<img src="Screenshots/Screenshot_2020-10-28-14-14-56-14_67ef6253042c53f51dcc407f80548df2.jpg
-" width="200">
+<img src="Screenshots/img_2.jpg" width="200">
 
 # Search Activity
 <img src="Screenshots/Screenshot_2020-10-28-14-15-29-88_67ef6253042c53f51dcc407f80548df2.jpg
