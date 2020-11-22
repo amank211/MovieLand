@@ -83,7 +83,6 @@ public class trending_all_Adapter extends RecyclerView.Adapter<trending_all_Adap
             title = itemView.findViewById(R.id.title);
             rating = itemView.findViewById(R.id.rating);
             pop = itemView.findViewById(R.id.popular);
-
         }
     }
 
