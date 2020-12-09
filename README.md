@@ -13,6 +13,6 @@ Link - https://play.google.com/store/apps/details?id=com.health.movieland
 <img src="Screenshots/Screenshot_2020-10-28-14-15-09-36_67ef6253042c53f51dcc407f80548df2.jpg" width="200" hspace="10"> <img src="Screenshots/im2.jpg" width="200" hspace="10"> <img src="Screenshots/im3.jpg" width="200" hspace="10">
 
 # Movie Activity
-<img src="Screenshots/mov1.jpg" width="200" hspace="10"><img src="Screenshots/mov2.jpg" width="200" hspace="10"><img src="Screenshots/mov3.jpg" width="200" hspace="10">
+<img src="Screenshots/mov3.jpg" width="200" hspace="10"><img src="Screenshots/mov2.jpg" width="200" hspace="10"><img src="Screenshots/mov1.jpg" width="200" hspace="10">
 
 
