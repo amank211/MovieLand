@@ -4,7 +4,7 @@ This project uses TMDB REST API to show movie data.
 Link - https://play.google.com/store/apps/details?id=com.health.movieland
 
 # Home Screen
-<img src="Screenshots/img_2.jpg" width="200" hspace="10">   <img src="Screenshots/im6.jpg" width="200" hspace="10">    <img src="Screenshots/im5.jpg" width="200" hspace="10">
+<img src="Screenshots/img_2.jpg" width="200" hspace="10">   <img src="Screenshots/im6.jpg" width="200" hspace="10">    <img src="Screenshots/im5.jpg" width="200" hspace="10"><img src="Screenshots/im4.jpg" width="200" hspace="10">
 
 # Search Activity
 <img src="Screenshots/img_5.jpg" width="200" hspace="10">  <img src="Screenshots/search.jpg" width="200" hspace="10">  <img src="Screenshots/search2.jpg" width="200" hspace="10">  
